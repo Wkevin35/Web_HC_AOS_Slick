@@ -1,3 +1,5 @@
+AOS.init();
+
 $('#banner').slick({
     autoplay: true,
     autoplaySpeed: 1000,

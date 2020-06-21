@@ -43,6 +43,7 @@ nav a {
 }
 
 #about {
+  overflow: hidden;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -54,6 +55,7 @@ nav a {
 }
 
 #product {
+  overflow: hidden;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];

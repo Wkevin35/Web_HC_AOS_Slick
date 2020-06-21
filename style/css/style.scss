@@ -43,6 +43,7 @@ nav{
 
 
 @mixin section-box {
+    overflow: hidden;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     

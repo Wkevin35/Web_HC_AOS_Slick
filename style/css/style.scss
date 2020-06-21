@@ -1,0 +1,82 @@
+$text-black: rgb(18, 156, 22);
+$bg-transparent: rgba(255, 255, 255, 0.3);
+$color-black33: #00000033;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/tiles-wood.jpg);
+    
+}
+nav{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+    background-color: $bg-transparent;
+    display: grid;
+    grid-template-columns: 20% 50% 15% 15%;
+    padding: 30px 15px;
+    align-items: baseline;
+    border-bottom: 1px solid $color-black33;
+
+    #logo {
+        color: $text-black;
+        font-size: 20px;
+    }
+    a {
+        text-decoration: none;
+        color: $text-black;
+    }
+}
+
+#banner {
+    img {
+        height: 100vh;
+        object-fit: cover;
+    }
+}
+
+
+@mixin section-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    img {
+        width: 100%;
+    }
+
+   
+}
+
+#about {
+    @include section-box();
+}
+
+#product {
+    @include section-box();
+
+    grid-template-areas: "text pic";
+    *:nth-child(1) {
+        grid-area: pic;
+    }
+
+    *:nth-child(2) {
+        grid-area: text;
+    }
+}
+
+#brand {
+    width: 45%;
+    margin: 0 auto;
+}
+
+footer {
+    padding: 50px;
+    text-align: center;
+    color: white;
+}

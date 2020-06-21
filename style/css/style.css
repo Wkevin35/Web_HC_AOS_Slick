@@ -1,1 +1,90 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/tiles-wood.jpg);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 50% 15% 15%;
+      grid-template-columns: 20% 50% 15% 15%;
+  padding: 30px 15px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  border-bottom: 1px solid #00000033;
+}
+
+nav #logo {
+  color: #129c16;
+  font-size: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #129c16;
+}
+
+#banner img {
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+#about img {
+  width: 100%;
+}
+
+#product {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "text pic";
+}
+
+#product img {
+  width: 100%;
+}
+
+#product *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: pic;
+}
+
+#product *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: text;
+}
+
+#brand {
+  width: 45%;
+  margin: 0 auto;
+}
+
+footer {
+  padding: 50px;
+  text-align: center;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
